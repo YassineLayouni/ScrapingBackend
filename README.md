@@ -10,7 +10,6 @@
   {
     "site": "Tunisianet",
     "url": "https://www.tunisianet.com.tn/recherche?s=samsung+tv&prix=3000-5000&order=product.price.asc",
-    "total_items": 3,
     "items_shown": 3,
     "current_page": 1,
     "total_pages": 1,
