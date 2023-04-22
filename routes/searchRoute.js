@@ -61,7 +61,7 @@ async function myTekData({
         data["url"] = html.config.url;
         //data["total_items"] = $('.actions-toolbar div').contents().first().text().replaceAll("produits","");
         data["items_shown"] = 0;
-        data["current_page"] = page;
+        data["current_page"] = parseInt(page);
         //data["total_pages"] = html.data.pagination.pages_count;
         //data["min_price"] = $(".from_display").contents().first().text();
         //data["max_price"] = $(".to_display").contents().first().text();
