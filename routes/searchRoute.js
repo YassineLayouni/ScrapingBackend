@@ -17,7 +17,7 @@ async function tunisianetData({
     await axios.get(`https://www.tunisianet.com.tn/recherche?s=${query}&submit_search=&page=${page}&prix=${price}&order=product.price.asc`).then(function(html){
         $ = cheerio.load(html.data.rendered_products);
         data["url"] = html.data.current_url;
-        //data["total_items"] = html.data.pagination.total_items;
+        data["total_items"] = html.data.pagination.total_items;
         data["items_shown"] = html.data.pagination.items_shown_to;
         data["current_page"] = html.data.pagination.current_page;
         data["total_pages"] = html.data.pagination.pages_count;
@@ -101,20 +101,6 @@ router.get("/tunisianet",async (req,res)=>{
         price : req.query.price ?? 0
     }));
 });
-
-
-router.get("/mytek",async (req,res)=>{
-    if(!req.query.query){
-        res.status(400).send({"message" : "Bad request, please specify the search query"});
-        return;
-    }
-    res.send(await myTekData({
-        query : req.query.query,
-        page : req.query.page ?? 1,
-        price : req.query.price ?? 0
-    }));
-});
-
 
 
 router.get("/mytek",async (req,res)=>{
