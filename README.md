@@ -1,6 +1,6 @@
 # ScrapingBackend
 * Tunisianet
-  - Request exemple : http://localhost:9300/search/tunisianet?query=samsung tv&page=2&price=3000-5000
+  - Request exemple : http://localhost:9300/search/tunisianet?query=samsungtv&page=2&price=3000-5000
   - Query parameters : 
     - query (required)
     - page (optional)
