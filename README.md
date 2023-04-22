@@ -74,7 +74,7 @@
     "site": "MyTek",
     "url": "https://www.mytek.tn/catalogsearch/result/index/?p=2&price=1800-5000&q=tv",
     "items_shown": 25,
-    "current_page": "2",
+    "current_page": 2,
     "products": [
         {
             "name": "Tv TOSHIBA 50'' UHD 4K Android Smart(50U7950) + Abnmt 12mois",
